@@ -1,0 +1,165 @@
+body logo {
+  width: 200px;
+  height: 200px;
+}
+
+body li {
+  text-align: right;
+  display: inline-block;
+  margin-left: 90px;
+  font-size: 1.25rem;
+}
+
+body li:hover {
+  cursor: pointer;
+  color: #9c8cf3;
+}
+
+body ul {
+  float: right;
+  margin-top: -40px;
+  margin-right: 70px;
+}
+
+body .bgcolor {
+  position: static;
+  top: 60px;
+  left: 37px;
+  width: 95%;
+  height: 80%;
+  background-color: black;
+}
+
+body .img {
+  width: 1500px;
+  height: 700px;
+  margin-top: -50px;
+}
+
+body .para {
+  color: white;
+  font-size: 1.25rem;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+body .heading {
+  color: white;
+  font-size: 5rem;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+body h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-top: 80px;
+}
+
+body p {
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 70px;
+  font-size: 17px;
+}
+
+body .rule {
+  padding-top: 200px;
+  height: 20px;
+  color: black;
+  width: 100%;
+}
+
+body .carts {
+  gap: 3%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+body .cart-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+body .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flexbox;
+}
+
+body .fa:hover {
+  opacity: 0.7;
+}
+
+body .fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 630px;
+}
+
+body .fa-linkedin {
+  background: #0077b5;
+  color: white;
+}
+
+body .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  body ul {
+    margin-top: 30px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  body li {
+    float: inline-block;
+  }
+  body .bgcolor {
+    margin-top: 100px;
+    width: 145%;
+  }
+  body .img {
+    width: 630px;
+    height: 600px;
+  }
+  body .para {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  body .heading {
+    text-align: center;
+    padding-right: 90px;
+  }
+  body h1 {
+    text-align: center;
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+  body p {
+    display: inline-block;
+    margin-right: -150px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

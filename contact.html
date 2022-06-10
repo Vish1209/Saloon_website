@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div>
+        <img src="/Logo timidlly.png" class="logo">
+    </div>
+    <div>
+        <ul>
+            <li><a href="index.html"style="text-decoration: none; color: black;">Home </a> </li>
+            <li><a href=""></a>About</li>
+            <li> <a href="/contact.html"></a> Contact Us</li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="container">
+            <form onsubmit="sendMail(); reset(); return false;" method="post">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Lastt Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" text="message" cols="30" rows="10" id="msg"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+        <div id="status" class="success"></div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var name = $('msg').val();
+        function sendMail() {
+            Email.send({
+                // secureToken:" 3d50c009-9f3b-46b4-9739-53d65b2aa823",
+                Host: "smtp.gmail.com",
+                Username: "vishaktyan1209@gmail.com",
+                Password: "#vish1209",
+                To: 'vishkatyan1209@gmail.com',
+                From: document.getElementById("email").val(),
+                Subject: "This is the subject",
+                Body: "Name : " + document.getElementById("firstName").val() + "<br> Msg : " + document.getElementById("msg").val()
+            }).then(
+                message => alert("success" + name)
+            );
+
+        }
+
+    </script>
+</body>
+
+</html>
